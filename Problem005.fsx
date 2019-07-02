@@ -5,4 +5,4 @@ let max = Array.max(numbers)
 
 Seq.unfold (fun x -> Some(x, x + max)) max
 |> Seq.filter (fun x -> isDividedByAll x numbers)
-|> Seq.head |> printf "%A"
+|> Seq.head |> printf "%d"
